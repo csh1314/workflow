@@ -18,8 +18,8 @@ xcode-select --install
 # 安装 oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 # 覆盖本地配置
-curl https://code.devops.xiaohongshu.com/gufeng/workflow/-/raw/master/config/.zshrc >~/.zshrc
-curl https://code.devops.xiaohongshu.com/gufeng/workflow/-/raw/master/config/.gitconfig >~/.gitconfig
+curl https://github.com/csh1314/workflow/blob/main/config/.zshrc >~/.zshrc
+curl https://github.com/csh1314/workflow/blob/main/config/.gitconfig >~/.gitconfig
 
 # 注意用户名确保和邮箱名相同
 git config --global user.name $USER

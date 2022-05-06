@@ -1,0 +1,52 @@
+# This is Git's per-user configuration file.
+[alias]
+adog = log --all --decorate --oneline --graph
+[merge]
+keepBackup = false
+tool = vscode
+[mergetool "vscode"]
+cmd = code --wait $MERGED
+keepTemporaries = false
+trustExitCode = false
+keepBackup = false
+[diff]
+tool = vscode
+[difftool "vscode"]
+cmd = code --wait --diff $LOCAL $REMOTE
+
+[core]
+editor = code --wait
+	excludesfile = ~/.gitignore
+[merge "ours"]
+driver = true
+[color]
+ui = true
+[difftool "sourcetree"]
+cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+path =
+[mergetool "sourcetree"]
+cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+trustExitCode = true
+[web]
+browser = chrome
+
+[mergetool]
+keepBackup = false
+[push]
+followTags = true
+[submodule]
+recurse = true
+
+
+
+
+[credential]
+	helper = store
+[user]
+	name = chusihao
+	email = chusihao@xiaohongshu.com
+
+
+# 个人仓库采用此配置
+[includeIf "gitdir:~/self/**"]
+path = ~/self/.gitconfig
