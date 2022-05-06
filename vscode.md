@@ -7,4 +7,4 @@
   2. Download Key : Shift + Alt + D
 
   (on macOS: Shift + Option + U / Shift + Option + D)
-```s
+```
