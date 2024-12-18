@@ -36,17 +36,9 @@ keepBackup = false
 followTags = true
 [submodule]
 recurse = true
-
-
-
-
-[credential]
-	helper = store
 [user]
-	name = chusihao
-	email = chusihao@xiaohongshu.com
+	name = csh1314
+	email = cshsb@qq.com
 
-
-# 个人仓库采用此配置
-[includeIf "gitdir:~/self/**"]
-path = ~/self/.gitconfig
+[includeIf "gitdir:~/code/self"]
+    path = .gitconfig-dev

@@ -10,5 +10,5 @@
 
   2. 执行脚本
   ```
-    cd $HOME/Desktop && curl -o- https://github.com/csh1314/workflow/blob/main/script/init_mac.sh | bash
+    cd $HOME/Desktop && curl -o- https://raw.githubusercontent.com/csh1314/workflow/main/script/init_mac.sh | bash
   ```
