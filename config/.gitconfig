@@ -1,14 +1,22 @@
 # This is Git's per-user configuration file.
 [alias]
-adog = log --all --decorate --oneline --graph
+	adog = log --all --decorate --oneline --graph
 [merge]
-keepBackup = false
-tool = vscode
-[mergetool "vscode"]
-cmd = code --wait $MERGED
-keepTemporaries = false
-trustExitCode = false
-keepBackup = false
+	keepBackup = false
+	tool = cursor
+[mergetool "cursor"]
+	cmd = ~/scripts/cursor-wait.sh
+	keepTemporaries = false
+	trustExitCode = false
+	keepBackup = false
+# [merge]
+# 	keepBackup = false
+# 	tool = vscode
+# [mergetool "vscode"]
+# 	cmd = code --wait $MERGED
+# 	keepTemporaries = false
+# 	trustExitCode = false
+# 	keepBackup = false
 [diff]
 tool = vscode
 [difftool "vscode"]
@@ -18,27 +26,27 @@ cmd = code --wait --diff $LOCAL $REMOTE
 editor = code --wait
 	excludesfile = ~/.gitignore
 [merge "ours"]
-driver = true
+	driver = true
 [color]
-ui = true
+	ui = true
 [difftool "sourcetree"]
-cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-path =
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path =
 [mergetool "sourcetree"]
-cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-trustExitCode = true
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
 [web]
-browser = chrome
+	browser = chrome
 
 [mergetool]
-keepBackup = false
+	keepBackup = false
 [push]
-followTags = true
+	followTags = true
 [submodule]
-recurse = true
+	recurse = true
 [user]
 	name = csh1314
 	email = cshsb@qq.com
 
-[includeIf "gitdir:~/code/self"]
-    path = .gitconfig-dev
+[includeIf "gitdir:~/code/self/"]
+  path = .gitconfig-self
