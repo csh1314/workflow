@@ -1,14 +1,20 @@
 # This is Git's per-user configuration file.
 [alias]
 	adog = log --all --decorate --oneline --graph
+# Cursor First
 [merge]
 	keepBackup = false
 	tool = cursor
 [mergetool "cursor"]
-	cmd = ~/scripts/cursor-wait.sh
+	cmd = ~/ide-scripts/cursor-wait.sh
 	keepTemporaries = false
 	trustExitCode = false
 	keepBackup = false
+[core]
+	editor = ~/ide-scripts/cursor-wait.sh
+	excludesfile = ~/.gitignore
+
+# VSCode conf
 # [merge]
 # 	keepBackup = false
 # 	tool = vscode
@@ -17,14 +23,14 @@
 # 	keepTemporaries = false
 # 	trustExitCode = false
 # 	keepBackup = false
-[diff]
-tool = vscode
-[difftool "vscode"]
-cmd = code --wait --diff $LOCAL $REMOTE
+# [core]
+# 	editor = code --wait
+# 	excludesfile = ~/.gitignore
 
-[core]
-editor = code --wait
-	excludesfile = ~/.gitignore
+[diff]
+	tool = vscode
+[difftool "vscode"]
+	cmd = code --wait --diff $LOCAL $REMOTE
 [merge "ours"]
 	driver = true
 [color]
@@ -37,7 +43,6 @@ editor = code --wait
 	trustExitCode = true
 [web]
 	browser = chrome
-
 [mergetool]
 	keepBackup = false
 [push]

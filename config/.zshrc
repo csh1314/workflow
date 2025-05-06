@@ -13,7 +13,7 @@ export NVM_DIR="$HOME/.nvm"
 # load a random theme each time Oh My Zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="pygmalion"
+ZSH_THEME="cloud" # "pygmalion"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -75,14 +75,16 @@ ZSH_THEME="pygmalion"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git extract z nvm npm zsh-autosuggestions zsh-syntax-highlighting fast-syntax-highlighting zsh-autocomplete)
+plugins=(git extract z nvm zsh-autosuggestions zsh-syntax-highlighting fast-syntax-highlighting copypath you-should-use)
 
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-# Code Editor
-alias c="code"
+# Cursor alias
+alias c="open -a Cursor $1"
+alias ohmyzsh="c ~/.oh-my-zsh"
+alias zshrc="c ~/.zshrc"
 
 # 创建 git ignore 文件 比如gi: react
 function gi() { curl -sLw n https://www.toptal.com/developers/gitignore/api/$@ ;}
@@ -118,3 +120,9 @@ alias gi="gi"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 export PATH=/opt/homebrew/bin:$PATH
+
+# you-should-use plugin export
+export YSU_MESSAGE_POSITION="after"
+
+
+
