@@ -1,0 +1,60 @@
+{
+	"vue-sfc": {
+    "scope": "vue",
+    "prefix": "vuesfc",
+    "body": [
+      "<script setup lang=\"ts\">",
+      "const props = defineProps<{",
+      "  modelValue?: string,",
+      "}>()",
+      "$0",
+      "</script>",
+      "",
+      "<template>",
+      "  <div>",
+      "    <slot/>",
+      "  </div>",
+      "</template>",
+    ],
+		"description": "Create vue sfc template"
+  },
+	"vue-tsx": {
+		"scope": "typescript",
+		"prefix": "vuetsx",
+		"body": [
+		"import { defineComponent } from 'vue'\n",
+		"export default defineComponent({",
+		"    props: {},",
+		"    emits: [],",
+		"    components: {},",
+		"    setup(props, ctx) {",
+		"        return () => <div></div>",
+		"    }",
+		"})",
+		],
+		"description": "Create vue tsx template"
+	},
+	"vue-template-ref": {
+    "scope": "javascript,typescript,vue",
+    "prefix": "tref",
+    "body": [
+      "const ${1:el} = shallowRef<HTMLDivElement>()",
+    ]
+  },
+	"vue-computed": {
+    "scope": "javascript,typescript,vue",
+    "prefix": "com",
+    "body": [
+      "computed(() => { $1 })"
+    ]
+  },
+	"vue-watch-effect": {
+    "scope": "javascript,typescript,vue",
+    "prefix": "watchE",
+    "body": [
+      "watchEffect(() => {",
+      "  $1",
+      "})"
+    ]
+  },
+}

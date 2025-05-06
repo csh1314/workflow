@@ -1,0 +1,86 @@
+{
+	"react-tailwind-fc": {
+		"scope": "javascript,typescript,javascriptreact,typescriptreact",
+		"prefix": "tfc",
+		"body": [
+      "import { cn } from '@/utils/css';",
+      "",
+      "export interface I$1Props {",
+      "  className?: string;",
+      "}",
+      "",
+      "export default function $1({",
+      "  className,",
+      "}: I$1Props) {",
+      "  return (",
+      "    <div className={cn('w-full h-full', className)}>",
+      "      <div>todo</div>",
+      "    </div>",
+      "  );",
+      "}",
+      ""
+    ],
+		"description": "Create a react function component based on tailwind CSS"
+	},
+  "react-sfc": {
+    "prefix": "sfc",
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "body": [
+      "export interface I$1Props {",
+      "  value?: string;",
+      "}",
+      "",
+      "export default function $1({",
+      "  value,",
+      "}: I$1Props) {",
+      "  return (",
+      "    <div>",
+      "      <div>{value}</div>",
+      "    </div>",
+      "  );",
+      "}",
+      ""
+    ],
+    "description": "Create a react function component"
+  },
+  "react-use-memo": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "usem",
+    "body": [
+      "const $2 = useMemo(() => $1, []);"
+    ],
+    "description": "Create a useMemo hook"
+  },
+  "react-use-state": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "uses",
+    "body": [
+      "const [$1, $2] = useState($3);"
+    ],
+    "description": "Create a useState hook"
+  },
+  "react-use-effect": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "usee",
+    "body": [
+      "useEffect(() => { \n  $1 \n}, []);"
+    ],
+    "description": "Create a useEffect hook"
+  },
+  "react-use-ref": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "user",
+    "body": [
+      "const $2 = useRef($1);"
+    ],
+    "description": "Create a useRef hook"
+  },
+  "react-use-callback": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "user",
+    "body": [
+      "const $2 = useCallback(() => { \n  $1 \n}, []);"
+    ],
+    "description": "Create a useCallback hook"
+  }
+}
