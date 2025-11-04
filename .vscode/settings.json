@@ -1,0 +1,116 @@
+{
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmDelete": false,
+  "workbench.startupEditor": "welcomePage",
+  "files.associations": {
+      "*.cjson": "jsonc",
+      "*.wxss": "css",
+      "*.wxs": "javascript"
+  },
+  "emmet.includeLanguages": {
+      "wxml": "html",
+      "javascript": "javascriptreact"
+  },
+  "minapp-vscode.disableAutoConfig": true,
+  "editor.find.addExtraSpaceOnTop": false,
+  "eslint.codeAction.showDocumentation": {
+      "enable": true
+  },
+  "files.autoSave": "afterDelay",
+  "workbench.editor.enablePreview": false,
+  "workbench.iconTheme": "material-icon-theme",
+  "editor.fontWeight": "200",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "workbench.editorAssociations": {
+      "*.ipynb": "jupyter.notebook.ipynb"
+  },
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  "js/ts.implicitProjectConfig.experimentalDecorators": true,
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "debug.javascript.autoAttachFilter": "disabled",
+  "editor.tabSize": 2,
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "editor.acceptSuggestionOnCommitCharacter": false,
+  "[javascript]": {
+      "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "[html]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "liveServer.settings.donotShowInfoMsg": true,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "editor.unicodeHighlight.invisibleCharacters": false,
+  "editor.unicodeHighlight.allowedCharacters": {
+      " ": true
+  },
+  "editor.inlineSuggest.enabled": true,
+  "terminal.integrated.defaultProfile.osx": "zsh",
+  "editor.maxTokenizationLineLength": 2000,
+  "html.format.enable": false,
+  "[python]": {
+      "editor.formatOnType": true
+  },
+  "eslint.notebooks.rules.customizations": [],
+  "turboConsoleLog.delimiterInsideMessage": "",
+  "gitlens.advanced.messages": {
+      "suppressLineUncommittedWarning": true
+  },
+  "emmet.showSuggestionsAsSnippets": true,
+  "[vue]": {
+      "editor.defaultFormatter": "Vue.volar"
+  },
+  "[typescriptreact]": {},
+  "[json]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "liveServer.settings.donotVerifyTags": true,
+  "security.workspace.trust.untrustedFiles": "open",
+  "cursor.enable_agent_window_setting": true,
+  "prettier.enable": false,
+  "editor.formatOnSave": false,
+  "eslint.nodeEnv": "/Users/csh/.nvm/versions/node/v20.13.1/bin/node",
+  // Auto fix
+  "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": "explicit",
+      "source.organizeImports": "never"
+  },
+  "eslint.validate": [
+      "javascript",
+      "javascriptreact",
+      "typescript",
+      "typescriptreact",
+      "vue",
+      "html",
+      "markdown",
+      "json",
+      "jsonc",
+      "yaml",
+      "toml",
+      "xml",
+      "gql",
+      "graphql",
+      "astro",
+      "svelte",
+      "css",
+      "less",
+      "scss",
+      "pcss",
+      "postcss"
+  ],
+  "eslint.rules.customizations": [
+      { "rule": "style/*", "severity": "off", "fixable": true },
+      { "rule": "format/*", "severity": "off", "fixable": true },
+      { "rule": "*-indent", "severity": "off", "fixable": true },
+      { "rule": "*-spacing", "severity": "off", "fixable": true },
+      { "rule": "*-spaces", "severity": "off", "fixable": true },
+      { "rule": "*-order", "severity": "off", "fixable": true },
+      { "rule": "*-dangle", "severity": "off", "fixable": true },
+      { "rule": "*-newline", "severity": "off", "fixable": true },
+      { "rule": "*quotes", "severity": "off", "fixable": true },
+      { "rule": "*semi", "severity": "off", "fixable": true }
+  ],
+  "eslint.useFlatConfig": true,
+  "eslint.workingDirectories": [{ "mode": "auto" }]
+}
